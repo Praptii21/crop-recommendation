@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Disease Detection Upload</title>
+</head>
+<body>
+  <h2>Upload Plant Image for Disease Detection</h2>
+  <form id="uploadForm" enctype="multipart/form-data" method="post" action="http://127.0.0.1:5000/detect-disease">
+    <input type="file" name="image" accept="image/*" required>
+    <button type="submit">Upload & Detect</button>
+  </form>
+</body>
+</html>
