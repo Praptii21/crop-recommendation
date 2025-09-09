@@ -141,24 +141,7 @@ def recommend_crop():
             data["season"], data["state"], data["area"], data["fertilizer"], data["pesticide"]
         )
 
-        # build HTML to show top 3 recommendations
-        recs_html = ""
-        if result.get("recommendations"):
-            for rec in result["recommendations"]:
-                conf_text = f" ({rec['confidence']}%)" if rec.get("confidence") is not None else ""
-                recs_html += f"<li>{rec['crop']}{conf_text}</li>"
-        else:
-            recs_html = "<li>No recommendations available</li>"
-
-        best_crop = result["recommendations"][0]["crop"] if result.get("recommendations") else "N/A"
-        return f"""
-        <h2>Crop Recommendation Result</h2>
-        <ul>
-            {recs_html}
-        </ul>
-        <p><b>Expected Yield (for best crop {best_crop}):</b> {result['expected_yield']}</p>
-        <p><b>Inputs Used:</b> {result['inputs_used']}</p>
-        """
+        return jsonify(result)
 
     except Exception as e:
-        return f"<p>Error: {e}</p>"
+        return jsonify({"error": str(e)})
