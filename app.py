@@ -18,10 +18,11 @@ app.register_blueprint(ml_crop_bp)
 
 @app.route("/")
 def home():
-    return jsonify({"message": "AgroAssist Backend Running 🚀"})
+    return jsonify({"message": "KrishiSathi Backend Running 🚀"})
 
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()  # create tables if not already
     app.run(debug=True)
+
 
