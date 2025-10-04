@@ -1,11 +1,11 @@
 
-Krishi Sathi: Empowering Farmers, Sustaining Futures
+# Krishi Sathi: Empowering Farmers, Sustaining Futures
 An AI-powered mobile application to provide farmers with real-time, data-driven agricultural recommendations and solutions.
 
-OVERVIEW
+# OVERVIEW
 Krishi Sathi is a smart agriculture solution designed to assist Indian farmers in making informed decisions. The application provides comprehensive, personalized guidance by integrating an AI/ML backend with a user-friendly, cross-platform mobile app. Our goal is to empower farmers with the right knowledge, at the right time, in their own language.
 
-FEATURES
+# FEATURES
 
 Krishi Sathi offers a suite of features designed to simplify farming and increase productivity:
 AI-Based Crop Recommendation: Recommends the top 3 crops based on soil nutrients, pH, rainfall, temperature, and location data. The recommendations also include projected yield and profit margins.
@@ -16,7 +16,7 @@ Offline-First Design: The app uses caching to ensure farmers can still access st
 Multilingual Support: The user interface and chatbot are available in multiple languages to overcome language barriers.
 
 
-Technical Stack
+# Technical Stack
 
 Our solution is built on a three-layered architecture.
 1. AI/ML Models (Python)
